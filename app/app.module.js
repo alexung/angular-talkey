@@ -1,3 +1,3 @@
-var app = angular.module('talkeyApp', []);
+var talkeyApp = angular.module('talkeyApp', []);
 
 

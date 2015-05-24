@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="talkeyApp">
   <head>
     <title>Talkey</title>
-    <link rel="stylesheet" type="type/css" href="assets/css/style.css">
-  </head>
-  <body>
-    <h1>Talkey</h1>
-    <p>Connecting conferences with folks interested in speaking</p>
+    <!--CSS-->
+    <link rel="stylesheet" type="type/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="type/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+
+    <!--SPELLS-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="assets/app.module.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/components/home/homeController.js"></script>
+  </head>
+  <body ng-controller="homeCtrl">
+    <header>
+      <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Talkey</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
+      </nav>
+      <p>Connecting conferences with folks interested in speaking</p>
+    </header>
+    <!-- MAIN CONTENT AND INJECTED VIEWS-->
+    <div id="main">
+      {{ message }}
+      <!--angular templating-->
+      <!--this is where content will be injected-->
+      <div ng-view></div>
+    </div>
+
   </body>
 </html>
