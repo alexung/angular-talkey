@@ -1,3 +1,1 @@
-var talkeyApp = angular.module('talkeyApp', []);
-
-
+var talkeyApp = angular.module('talkeyApp', ['ngRoute']);
