@@ -5,7 +5,7 @@
   <ol>
     <div ng-repeat="conference in conferences">
         <li>
-          <strong><a href="#conferences/:conferenceId">{{conference.eventName}}</a></strong><br>
+          <strong><a href="#conferences/{{conference.conferenceId}}">{{conference.eventName}}</a></strong><br>
           Number of Guests: {{conference.numOfAttendees}}<br>
           Date: {{conference.date}}
         </li>

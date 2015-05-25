@@ -9,8 +9,8 @@ talkeyApp.config(['$routeProvider', function($routeProvider) {
       controller: 'conferenceCtrl'
     })
     .when('/conferences/:conferenceId', {
-       templateUrl: 'app/components/conference/individConferenceView.html',
-      controller: 'conferenceCtrl'
+      templateUrl: 'app/components/conference/conferenceDetailView.html',
+      controller: 'conferenceDetailCtrl'
     }).
     otherwise({
       redirectTo: '/'
