@@ -1,10 +1,11 @@
 talkeyApp.config(function($routeProvider){
   $routeProvider
     .when('/', {
-      templateUrl: 'components/home/homeView.html',
-      controller: 'mainCtrl'
+      templateUrl: 'app/components/home/homeView.html',
+      controller: 'homeCtrl'
     })
-    .when('/about', {
-      templateUrl:
-    })
+    .when('/conferences', {
+      templateUrl: 'app/components/conference/conferenceView.html',
+      controller: 'conferenceCtrl'
+    });
 });
