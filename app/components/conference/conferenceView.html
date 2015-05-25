@@ -2,3 +2,12 @@
   <p>This is the conference view</p>
   <h2>message: {{message}}<h2>
 </div>
+  <ol>
+    <div ng-repeat="conference in conferences">
+        <li>
+          <strong>{{conference.eventName}}</strong><br>
+          Number of Guests: {{conference.numOfAttendees}}<br>
+          Date: {{conference.date}}
+        </li>
+    </div>
+  </ol>
