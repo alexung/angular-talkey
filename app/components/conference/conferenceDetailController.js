@@ -1,8 +1,8 @@
-talkeyApp.controller('conferenceCtrl', function($scope) {
+talkeyApp.controller('conferenceDetailCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.conferenceId = $routeParams.conferenceId;
 
-  $scope.message = "lol conference view";
-
-  $scope.conferences = [
+    $scope.conferences = [
     {"conferenceId": 1,
       "eventName": "Alex's 23rd birthday",
       "numOfAttendees": 9001,
@@ -19,6 +19,4 @@ talkeyApp.controller('conferenceCtrl', function($scope) {
       "date": "tomorrow"
     }
   ];
-
-});
-
+  }]);
