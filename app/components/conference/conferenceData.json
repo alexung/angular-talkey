@@ -1,14 +1,5 @@
-talkeyApp.controller('conferenceCtrl', ['$scope', function($scope) {
-
-  // $scope.getData = function() {
-  //   conferenceService.async().then(function(d) {
-  //     $scope.data = d;
-  //   });
-  // };
-
-  $scope.message = "lol conference view";
-
-  $scope.conferences = [
+{
+  "conferenceArray":[
     {"conferenceId": 1,
       "eventName": "Alex's 23rd birthday",
       "numOfAttendees": 9001,
@@ -24,7 +15,9 @@ talkeyApp.controller('conferenceCtrl', ['$scope', function($scope) {
       "numOfAttendees": 2,
       "date": "tomorrow"
     }
-  ];
+  ]
+}
 
-}]);
+
+
 
