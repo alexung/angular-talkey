@@ -1,5 +1,7 @@
 <p>individual Conference view</p>
-{{conferences[conferenceId-1].conferenceId}}<br>
-<strong>{{conferences[conferenceId-1].eventName}}</strong><br>
-{{conferences[conferenceId-1].numOfAttendees}}<br>
-{{conferences[conferenceId-1].date}}
+{{meetings[conferenceId-1].conferenceId}}<br>
+<strong>{{meetings[conferenceId-1].eventName}}</strong><br>
+{{meetings[conferenceId-1].numOfAttendees}}<br>
+{{meetings[conferenceId-1].date}}
+<br><br>
+<a href="#conferences/{{meetings[conferenceId-1].conferenceId}}/signup">Signup To Speak</a>
