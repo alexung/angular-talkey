@@ -8,11 +8,19 @@ talkeyApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'app/components/conference/conferenceView.html',
       controller: 'conferenceCtrl'
     })
+    .when('/conferences/signup', {
+      templateUrl: 'app/components/conference/conferenceSignupView.html',
+      controller: 'conferenceCtrl'
+    })
     .when('/conferences/:conferenceId', {
       templateUrl: 'app/components/conference/conferenceDetailView.html',
       controller: 'conferenceDetailCtrl'
-    }).
-    otherwise({
+    })
+    .when('/conferences/:conferenceId/signup', {
+      templateUrl: 'app/components/conference/conferenceDetailSignupView.html',
+      controller: 'conferenceCtrl'
+    })
+    .otherwise({
       redirectTo: '/'
     });
     ;
