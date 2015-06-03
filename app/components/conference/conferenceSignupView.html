@@ -1,8 +1,7 @@
-<form ng-submit="addConference()">
+<form name="addConferenceForm" ng-submit="addConference()" action="#/conferences" method="post">
   <input placeholder="Conference Id" ng-model="newConferenceId" /><br>
   <input placeholder="Event Name" ng-model="newEventName" /><br>
   <input placeholder="Number of Attendees" ng-model="numOfAttendees" /><br>
   <input placeholder="Date" ng-model="date" /><br>
-
   <button type="submit">Submit</button>
 </form>
